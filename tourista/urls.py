@@ -33,5 +33,5 @@ urlpatterns = [
 
 if settings.DEBUG:
     '''Uncomment the next line to include your static file'''
-    # urlpatterns+=static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    urlpatterns+=static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
     urlpatterns+=static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
